@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: vibe-restaurant-manager
+    name: my-restaurant
     env: node
     buildCommand: npm install
     startCommand: npm start
