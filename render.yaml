@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: vibe-restaurant-manager
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # LIVE_URL auto-pulled from RENDER_EXTERNAL_URL at runtime; override if custom domain already known.
+      # - key: LIVE_URL
+      #   value: https://your-custom-domain.com
+    disks:
+      - name: vibe-data
+        mountPath: /app/data
+        sizeGB: 1

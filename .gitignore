@@ -1,0 +1,4 @@
+node_modules
+data/vibe.db
+npm-debug.log*
+.DS_Store
