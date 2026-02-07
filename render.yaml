@@ -11,7 +11,7 @@ services:
       # LIVE_URL auto-pulled from RENDER_EXTERNAL_URL at runtime; override if custom domain already known.
       # - key: LIVE_URL
       #   value: https://your-custom-domain.com
-    disks:
-      - name: vibe-data
-        mountPath: /app/data
-        sizeGB: 1
+    disk:
+      name: vibe-data
+      mountPath: /app/data
+      sizeGB: 1
